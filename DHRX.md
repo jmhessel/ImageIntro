@@ -7,15 +7,26 @@ Welcome to the workshop! If you haven't already filled out this form, I would ap
 - Go over survey results
 - Discuss any experiences we have working with images (keep these in mind during the workshop today!)
 - Goals of today
-  - Understanding images as data: replicating an existing digital humanities project
-  - 
-- This is my first
+  - Check-in: who is everyone? have folks tackled problems from a statistical perspective before?
+    - What types of data have folks used? Anyone
+  - Understanding images as data
+    - Loading images
+    - Images as arrays
+    - Filters
+    - Convolutions as filters
+    - Experimenting with image representations
+    - Replicating ["Neural Neighbors: Capturing Image Similarity"](http://dhlab.yale.edu/projects/neural_neighbors.html) along with convolutional network introduction
+  - Highlight a few other APIs commonly used for image understanding for your toolboxes
+  - Highlight a few image datasets
+  - Discussion: given the experience today, do you see any applications of computer vision to your own work?
+    - What more 
+  - If time: Diving deeper into convolutional neural networks
+
+During different parts
 
 ## Part 2: Images as data
 
-Our end-goal here is to replicate Leonard and Duhaime's work: ["Neural Neighbors: Capturing Image Similarity"](http://dhlab.yale.edu/projects/neural_neighbors.html).
-
-- Check out the project.
+- Check ["Neural Neighbors: Capturing Image Similarity"](http://dhlab.yale.edu/projects/neural_neighbors.html)
 - Download and unzip the files listed on the github page (5K coco images, 5K bl images)
 - Open up terminal, and navigate using `cd` to this directory.
 - run `jupyter notebook neural_neighbors.ipynb`
@@ -25,6 +36,8 @@ Our end-goal here is to replicate Leonard and Duhaime's work: ["Neural Neighbors
 
 - What other tools exist?
 - What other DH datasets exist?
+
+## Part 4: Exploring image datasets: what's
 
 ## Part 4 (if time): Convolutional Networks Unpacked
 

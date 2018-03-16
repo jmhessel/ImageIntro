@@ -1,7 +1,6 @@
 '''
-Simple interface to convolution due to Adrian Rosebrock
-
-https://www.pyimagesearch.com/2016/07/25/convolutions-with-opencv-and-python/
+Simple interface to convolution. 
+It's not perfect, but this is the best I could do after tweaking a lot.
 '''
 
 from PIL import Image

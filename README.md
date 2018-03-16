@@ -9,9 +9,12 @@ An intro image analysis workshop, originally constructed for DHRX 2018 @ Pitt.
 
 ## Python library requirements
 
-- python, and ipython notebook
+- python
+- jupyter
 - numpy
 - scipy
-- opencv
+- h5py
 - tensorflow
 - keras
+- annoy
+- scikit-image

@@ -24,17 +24,14 @@ Welcome to the workshop! If you haven't already filled out this form, I would ap
     - [Microsoft Azure, with web demo](https://azure.microsoft.com/en-us/services/cognitive-services/computer-vision/)
   - Discussion: given the experience today, do you see any applications of computer vision to your own work?
     - Pixel-level studies versus concept level studies? Key question: what level of abstraction is appropriate for your work?
-    - For pixel-level: my recommendation is to look for
-        - "segmentation"
-	- "keypoint detection"
-	- color-based methods
+    - For pixel-level: my recommendation is to look for "segmentation"; "keypoint detection"; color-based methods
     - For concept-level: my recommendation is to use neural networks.
     - Large variety of tasks.
   - If time: diving deeper into convolutional neural networks
 
-During different parts
+Coding instructions
 
-## Part 1: Images as data
+## Part 1: Replicating Neural Neighbors
 
 - Check ["Neural Neighbors: Capturing Image Similarity"](http://dhlab.yale.edu/projects/neural_neighbors.html)
 - Download and unzip the files listed on the github page (5K coco images, 5K british library images)
@@ -42,13 +39,6 @@ During different parts
 - run `jupyter notebook neural_neighbors.ipynb`
 - show demo visualization of image space.
 
-## Part 3: Exploring other tools for computer vision
+## Part 2: Diving Deeper
 
-- What other tools exist?
-- What other DH datasets exist?
-
-## Part 4: Exploring image datasets: what's
-
-## Part 4 (if time): Convolutional Networks Unpacked
-
-- Visualizing filters/activations
+- run `jupyter notebook digging_deeper.ipynb`

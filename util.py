@@ -3,7 +3,6 @@ import numpy as np
 from PIL import Image
 
 from keras.applications.imagenet_utils import preprocess_input
-from keras.applications.resnet50 import ResNet50
 from keras.preprocessing import image
 from keras.models import Sequential, Model
 from keras.layers import Flatten
@@ -32,6 +31,13 @@ def compute_mean_color(image):
         image = np.array(Image.open(image))
     if not type(image) is np.array:
         image = np.array(image)
+    if len(image.shape) == 2: #rare case where image is black-and-white.
+        new_image = np.empty((image.shape[0], image.shape[1], 30), dtype=np.uint8)
+        new_image[:,:,0] = image
+        new_image[:,:,1] = image
+        new_image[:,:,2] = image
+        image = new_image
+        
     mean_r = np.mean(image[:,:,0].flatten())
     mean_g = np.mean(image[:,:,1].flatten())
     mean_b = np.mean(image[:,:,2].flatten())
@@ -48,10 +54,6 @@ def constant_color_image(r, g, b, size=100):
     m_arr[:,:,1] = g
     m_arr[:,:,2] = b
     return Image.fromarray(m_arr)
-
-
-def nearest_neighbor_search(annoy_idx, image_idx, k=10):
-    nns = annoy_idx.get_nns_by_item(image_idx, k)
 
 def load_images_for_neural_network(fnames, batch_size):
     while True:#Keras generators need to loop forever for some reason...
